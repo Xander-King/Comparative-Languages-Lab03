@@ -24,7 +24,7 @@
 (define (approx-der f h) 
   ;; This function should return another function that 
   ;; computes the derivative, NOT 0. Delete the 0!
-  0
+  (lambda (t) (/ (- (f (+ t h)) (f (- t h))) (* 2 h)))
 )
 
 
